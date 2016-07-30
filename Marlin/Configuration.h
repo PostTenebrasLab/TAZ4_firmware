@@ -16,7 +16,7 @@
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(Aleph Objects, Inc, TAZ  config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Aleph Objects, Inc, TAZ config) modified for PTL" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -149,7 +149,7 @@
 #define HEATER_0_MAXTEMP 250
 #define HEATER_1_MAXTEMP 250
 #define HEATER_2_MAXTEMP 250
-#define BED_MAXTEMP 150
+#define BED_MAXTEMP 110
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
@@ -462,53 +462,53 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define EEPROM_CHITCHAT
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 205
+#define PLA_PREHEAT_HOTEND_TEMP 200
 #define PLA_PREHEAT_HPB_TEMP 60
 #define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define HIPS_PREHEAT_HOTEND_TEMP 240
-#define HIPS_PREHEAT_HPB_TEMP 110
+#define HIPS_PREHEAT_HOTEND_TEMP 230
+#define HIPS_PREHEAT_HPB_TEMP 90
 #define HIPS_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 240
-#define ABS_PREHEAT_HPB_TEMP 110
+#define ABS_PREHEAT_HOTEND_TEMP 230
+#define ABS_PREHEAT_HPB_TEMP 90
 #define ABS_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define BRIDGE_PREHEAT_HOTEND_TEMP 240
-#define BRIDGE_PREHEAT_HPB_TEMP 100
-#define BRIDGE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define BRIDGE_PREHEAT_HOTEND_TEMP 240
+//- #define BRIDGE_PREHEAT_HPB_TEMP 100
+//- #define BRIDGE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define PCTPE_PREHEAT_HOTEND_TEMP 235
-#define PCTPE_PREHEAT_HPB_TEMP 100
-#define PCTPE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define PCTPE_PREHEAT_HOTEND_TEMP 235
+//- #define PCTPE_PREHEAT_HPB_TEMP 100
+//- #define PCTPE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define ALLOY_910_PREHEAT_HOTEND_TEMP 240
-#define ALLOY_910_PREHEAT_HPB_TEMP 100
-#define ALLOY_910_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define ALLOY_910_PREHEAT_HOTEND_TEMP 240
+//- #define ALLOY_910_PREHEAT_HPB_TEMP 100
+//- #define ALLOY_910_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 //~ #define BAMBOO_PREHEAT_HOTEND_TEMP 190
 //~ #define BAMBOO_PREHEAT_HPB_TEMP 60
 //~ #define BAMBOO_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define N_VENT_PREHEAT_HOTEND_TEMP 235
-#define N_VENT_PREHEAT_HPB_TEMP 60
-#define N_VENT_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define N_VENT_PREHEAT_HOTEND_TEMP 235
+//- #define N_VENT_PREHEAT_HPB_TEMP 60
+//- #define N_VENT_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define LAYBRICK_PREHEAT_HOTEND_TEMP 190
-#define LAYBRICK_PREHEAT_HPB_TEMP 60
-#define LAYBRICK_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define LAYBRICK_PREHEAT_HOTEND_TEMP 190
+//- #define LAYBRICK_PREHEAT_HPB_TEMP 60
+//- #define LAYBRICK_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define LAYWOOD_PREHEAT_HOTEND_TEMP 190
-#define LAYWOOD_PREHEAT_HPB_TEMP 60
-#define LAYWOOD_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define LAYWOOD_PREHEAT_HOTEND_TEMP 190
+//- #define LAYWOOD_PREHEAT_HPB_TEMP 60
+//- #define LAYWOOD_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define POLYCARBONATE_PREHEAT_HOTEND_TEMP 290
-#define POLYCARBONATE_PREHEAT_HPB_TEMP 110
-#define POLYCARBONATE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define POLYCARBONATE_PREHEAT_HOTEND_TEMP 290
+//- #define POLYCARBONATE_PREHEAT_HPB_TEMP 110
+//- #define POLYCARBONATE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
-#define TGLASE_PREHEAT_HOTEND_TEMP 245
-#define TGLASE_PREHEAT_HPB_TEMP 60
-#define TGLASE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+//- #define TGLASE_PREHEAT_HOTEND_TEMP 245
+//- #define TGLASE_PREHEAT_HPB_TEMP 60
+//- #define TGLASE_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 
 //LCD and SD support
